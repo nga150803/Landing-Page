@@ -1,5 +1,5 @@
-import React, { FunctionComponent, useEffect } from 'react';
-import { ToastContainer, toast } from 'react-toastify';
+import React, { FunctionComponent} from 'react';
+import { ToastContainer } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css';
 

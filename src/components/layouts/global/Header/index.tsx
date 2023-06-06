@@ -22,7 +22,7 @@ const Header = () => {
 
 const [ isShowMenu, setIsShowMenu] = useState(true)
 const [isMobileMotionActive, setIsMobileMotionActive] = React.useState(false)
-const [headerActive, setHeaderActive] = useState(false)
+// const [headerActive, setHeaderActive] = useState(false)
 
 
 

@@ -1,4 +1,3 @@
-import React from 'react'
 
 import { Slide } from 'react-slideshow-image'
 import 'react-slideshow-image/dist/styles.css'
@@ -7,21 +6,21 @@ import styles from './Technogory.module.scss'
 import { View } from '@/components/shared'
 
 const cx = classNames.bind(styles)
-const spanStyle = {
-  padding: '20px',
-  background: 'pink',
-  color: '#000000',
-  borderRadius: '1rem'
-}
+// const spanStyle = {
+//   padding: '20px',
+//   background: 'pink',
+//   color: '#000000',
+//   borderRadius: '1rem'
+// }
 
-const divStyle = {
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  backgroundSize: 'cover',
-  height: '300px',
-  borderRadius: '1rem'
-}
+// const divStyle = {
+//   display: 'flex',
+//   alignItems: 'center',
+//   justifyContent: 'center',
+//   backgroundSize: 'cover',
+//   height: '300px',
+//   borderRadius: '1rem'
+// }
 const slideImages = [
   {
     url: 'https://i.pinimg.com/564x/6f/a9/c3/6fa9c33211ce7c08f2cc4fcef6144b7d.jpg',
