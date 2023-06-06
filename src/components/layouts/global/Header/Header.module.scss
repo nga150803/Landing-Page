@@ -1,0 +1,101 @@
+.wrapper__header{
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(20px);
+    // background-color: transparent;
+    z-index: 1000000;
+&__inner{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+
+    &__logo{
+        font-family: 'Pacifico', cursive;
+        font-size: 2rem;
+        background: -webkit-linear-gradient(var(--color-primary), var(--color-secondary));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &__dropdow{
+        display: none;
+    }
+    &__nav{
+        display: flex;
+        gap: 3rem;
+        font-weight: bold;
+
+        a{
+            transition: var(--transition-primary);
+
+        &:hover{
+            background: -webkit-linear-gradient(var(--color-primary), var(--color-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        }
+        
+
+
+
+    }
+}
+}
+
+@media screen and (max-width: 768px){
+    .wrapper__header{
+        position: relative;
+
+
+        &__inner{
+
+            &__logo{
+                font-size: 1.5rem;
+            }
+            &__dropdow{
+                display: block;
+
+                &__icon{
+                    font-size: 1.5rem;
+                    color: var(--color-primary);
+                    
+                }
+            }
+
+            &__nav{
+        background-color: var(--white);
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                width: 100%;
+                position: fixed;
+                left: 0;
+                top: 4rem;
+                flex-direction: column;
+                gap: 1rem;
+                padding: 20px 10px;
+
+                &__link{
+                    // background-color: #FEE140;
+                    border-radius: 0.7rem;
+
+                    margin: auto;
+                    width: 90%;
+                    text-align: center;
+                    padding: 10px;
+                    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                    &:hover{
+                        color: #fff;
+                    background-color: #FEE140;
+
+                    // background-image: linear-gradient(90deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+
+                    }
+                }
+
+            }
+        }
+
+    }
+    
+}

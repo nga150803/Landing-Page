@@ -1,0 +1,15 @@
+.wrapper__global {
+  display: flex;
+  min-height: 300vh;
+}
+.wrapper__global__side-bar {
+  flex: 1;
+  max-width: 22rem;
+  background-color: aquamarine;
+  top: 0;
+  position: sticky;
+}
+.wrapper__global__content {
+  flex: 1;
+  background-color: rgb(255, 204, 127);
+}/*# sourceMappingURL=Global.module.css.map */

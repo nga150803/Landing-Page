@@ -1,0 +1,180 @@
+.wrapper__banner{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        right: 0;
+        border-top: 3rem solid var(--color-theme-primary);
+        border-left: 3rem solid transparent;
+
+
+    }
+
+    &::after{
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: 0;
+        border-bottom: 3rem solid var(--color-theme-secondary);
+        border-right: 3rem solid transparent;
+        transform: rotate(90deg);
+
+
+    }
+
+    &__inner{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        backdrop-filter: blur(50rem);
+
+        &__content{
+            width: 90%;
+            margin: auto;
+            height: 100%;
+            display: flex;
+            gap: 1rem;
+            &__title{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                line-height: 5rem;
+                &__details1{
+                    font-size: 3rem;
+                    span{
+                        font-size: 4rem;
+                        background: -webkit-linear-gradient(var(--color-primary), var(--color-secondary));
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        font-family: "Pacifico", cursive;
+                        -webkit-text-stroke: 0.01rem var(--color-secondary);
+                    }
+
+                }
+                &__details2{
+                    font-size: 1.5rem;
+
+                }
+                &__button{
+                    border: none;
+                    padding: 0.8rem 2.5rem;
+                    background-color: #FEE140;
+                    background-image: linear-gradient(90deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+                    border-radius: 1.5rem;
+                    color: var(--white);
+                    font-size: 1.1rem;
+                }   
+
+            }
+            &__image{
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                //
+                &__frame{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    width: 19rem;
+                   height: 19rem;
+                   border-radius: 5rem;
+                   //
+                   &__img1{
+                       transform: rotate(40deg);
+                   border-radius: 5rem;
+
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                   }
+                   &__img2{
+                    position: absolute;
+                    width: 180%;
+                    animation: move 10s infinite;
+                    
+                   }
+
+                }
+
+                @keyframes move{
+                    0%{
+                        transform: translateY(-10%);
+
+                    }
+                    50%{
+                        transform: translateY(10%);
+
+                    }
+                    100%{
+                        transform: translateY(-10%);
+
+                    }
+                
+                }
+
+            }
+            
+        }
+    }
+
+}
+
+
+@media screen and (max-width:768px) {
+    .wrapper__banner{
+        height: 87vh;
+        &__inner{
+
+
+            &__content{
+                flex-direction: column-reverse;
+                // display: grid;
+
+
+                &__title{
+                    justify-content: flex-start;
+                    line-height: 3rem;
+                    &__details1{
+
+                        font-size: 2rem;
+                        span{
+                            font-size: 2rem;
+                           
+                        }
+    
+                    }
+                    &__details2{
+                        font-size: 1rem;
+    
+                    }
+                     
+    
+                }
+                &__image{
+                    
+                    &__frame{
+                        
+                        width: 14rem;
+                       height: 14rem;
+                       &__img2{
+                        width: 140%;
+                       }
+                    }
+    
+                    
+                }
+            }
+        }
+    }
+}

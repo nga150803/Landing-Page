@@ -1,0 +1,47 @@
+{
+  "accounts": [
+    {
+      "id": 1,
+      "username": "nga",
+      "password": "nga123",
+      "email": "Ttnga1508@gmail.com",
+      "status": true,
+      "role": "admin"
+    },
+    {
+      "email": "nga",
+      "password": "132434",
+      "fullName": "nga",
+      "status": true,
+      "role": "user",
+      "id": 2
+    },
+    {
+      "id": 6
+    },
+    {
+      "email": "min@gmail.com",
+      "password": "$2a$10$cjHD8h.BhEPZHxp/dqedJuzotIMCpLCezhFP59zXkLA8rUW/S7Y36",
+      "fullName": "min",
+      "status": true,
+      "role": "user",
+      "id": 7
+    },
+    {
+      "email": "min1@gmail.com",
+      "password": "$2a$10$9xj1ahhXaftLFeeOzxfABuhT/tuQCm9wtJtiliSJsznlTgw6cdoNe",
+      "fullName": "min1",
+      "status": true,
+      "role": "user",
+      "id": 8
+    },
+    {
+      "email": "nga1508@gmail.com",
+      "password": "$2a$10$qRMK1YDNYIqyylbypROnyO5Qt9u72vjsgnq2rOwKJViG3g8o06lvy",
+      "fullName": "nganga",
+      "status": true,
+      "role": "user",
+      "id": 9
+    }
+  ]
+}

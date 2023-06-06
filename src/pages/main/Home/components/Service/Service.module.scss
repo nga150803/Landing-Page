@@ -1,0 +1,35 @@
+.wrapper__service{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    &__inner{
+        width: 60%;
+        gap: 1rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+      &__item{
+        padding: 20px;
+        border-radius: 1rem;
+        // box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        border: 1px solid #eee;
+        background-color: var(--white);
+        display: flex;
+        justify-content: center;
+        &__image{
+
+           
+            width: 11rem;
+            height: 11rem;
+            background-color: azure;
+            border-radius: 1rem;
+            img{
+
+                border-radius: 1rem;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+      }
+
+    }
+}

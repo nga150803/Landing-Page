@@ -1,0 +1,44 @@
+.wrapper__about{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+padding: 4rem 2rem;
+    &__content{
+        text-align: center;
+        line-height: 2.5rem;
+        h1{
+            font-size: 2.4rem;
+            background: -webkit-linear-gradient(var(--color-primary), var(--color-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            // font-family: "Pacifico", cursive;
+            -webkit-text-stroke: 0.03rem var(--color-secondary);
+            text-transform: uppercase;
+
+        }
+        p{
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .wrapper__about{
+
+        &__content{
+            text-align: center;
+            line-height: 2rem;
+            h1{
+                font-size: 1.3rem;
+                text-transform: uppercase;
+    
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+
+    }
+    
+}
