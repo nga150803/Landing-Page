@@ -34,7 +34,7 @@ const Footer = () => {
                   </View>
                   <View className={cx('wrapper__footer__inner__content__item')}>
                   <h3>Cửa hàng</h3>
-                      <p>Hanga Web developer & Content Creator</p>
+                    <p>Hanga Web developer & Content Creator</p>
                       
                   </View>
                   <View className={cx('wrapper__footer__inner__content__item')}>
