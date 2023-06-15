@@ -5,23 +5,56 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="" href="/public/hanga_icon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="revisit-after" content="1 days"/>
+  <meta name="revisit-after" content="1 days" />
   <meta http-equiv="Loại dịch vụ" content="" />
   <meta name="keywords" content="Miu ,Dịch vụ, website, giải trí, truyền thông, content, design, nghệ thuật, web 3">
   <meta property="og:title" content="Dịch vụ giải trí Miu">
-   <meta name="robots" content="index, follow">
-   <meta property="og:image" content="https://www.pinterest.com/pin/844354630148796668/">
-   <meta property="og:type" content="Dịch vụ giải trí">
-   <link rel="canonical" href="Đường dẫn tới trang gốc">
-   <meta property="og:description" content="Đây là website đưa ra các dịch vụ như giải trí, học tập,...">
-   <meta name="author" content="Trần Hà Nga">
-   
-   <title>Miu - Dịch vụ website giải trí</title>
+  <meta name="robots" content="index, follow">
+  <meta property="og:image" content="src/assets/images/miu.png">
+  <meta property="og:type" content="Dịch vụ giải trí">
+  <link rel="canonical" href="Đường dẫn tới trang gốc">
+  <meta property="og:description" content="Đây là website đưa ra các dịch vụ như giải trí, học tập,...">
+  <meta name="author" content="Trần Hà Nga">
+
+  <title>Miu - Dịch vụ website giải trí</title>
 </head>
 
 <body>
+  <!-- Messenger Plugin chat Code -->
+  <div id="fb-root"></div>
+
+  <!-- Your Plugin chat code -->
+  <div id="fb-customer-chat" class="fb-customerchat">
+  </div>
+
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "106032638877218");
+    chatbox.setAttribute("attribution", "biz_inbox");
+  </script>
+
+  <!-- Your SDK code -->
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v17.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
   <div id="root"></div>
   <script type="module" src="/src/main.tsx"></script>
+
 </body>
 
 </html>

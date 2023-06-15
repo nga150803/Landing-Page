@@ -23,8 +23,13 @@ const Header = () => {
 const [ isShowMenu, setIsShowMenu] = useState(true)
 const [isMobileMotionActive, setIsMobileMotionActive] = React.useState(false)
 // const [headerActive, setHeaderActive] = useState(false)
+const [valueScoll, setValueScoll] = useState(0)
 
 
+
+window.addEventListener('scroll',()=>{
+  setValueScoll(window.scrollY)
+})
 
 useEffect(() => {
   if(window.innerWidth < 768){
@@ -34,7 +39,7 @@ useEffect(() => {
 
   }
 
-},[])
+},[valueScoll])
 
   return (
     <View className={cx('wrapper__header')}>
