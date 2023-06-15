@@ -6,7 +6,7 @@
         width: 60%;
         gap: 1rem;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
       &__item{
         padding: 20px;
         border-radius: 1rem;
@@ -32,4 +32,15 @@
       }
 
     }
+}
+
+@media screen and (max-width:1536px) {
+  .wrapper__service{
+    &__inner{
+      grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+
+
+    }
+  }
+  
 }

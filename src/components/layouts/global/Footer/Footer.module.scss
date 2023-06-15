@@ -20,19 +20,19 @@
         }
         &__content{
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
             gap: 1rem;
         &__item{
             line-height: 1.8rem;
             h3{
                 padding-top: 1rem;
                 padding-bottom: 0.5rem;
-                font-size: 1rem;
+                font-size: 1.1rem;
                 font-weight: 500;
                 text-transform: uppercase;
             }
             p{
-                font-size: 0.8rem;
+                font-size: 0.9rem;
             }
 
 
@@ -43,6 +43,32 @@
     }
 }
 
+@media screen and (max-width:1536px) {
+    .wrapper__footer{
+        &__inner{
+
+            &__title{
+
+            }
+            &__content{
+            grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+
+            }
+            &__item{
+                h3{
+                    font-size: 1rem;
+                }
+                p{
+                    font-size: 0.8rem;
+                }
+    
+    
+            }
+        }
+    }
+
+
+}
 @media screen and (max-width:768px) {
     
 }
