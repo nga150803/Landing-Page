@@ -1,0 +1,55 @@
+
+.next,
+.prev {
+  top: calc(50% - 20px);
+  position: absolute;
+  background: white;
+  border-radius: 30px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 2rem;
+  z-index: 2;
+}
+
+.next {
+  right: 1rem;
+}
+
+.prev {
+  left: 1rem;
+}
+
+.img_slider{
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+
+}
+@media screen and (max-width: 768px) {
+
+  .next,
+  .prev {
+
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+  .next {
+    right: 0.5rem;
+  }
+  
+  .prev {
+    left: 0.5rem;
+  }
+  .img_slider{
+    overflow: hidden;
+  }
+}
+
